@@ -25,7 +25,10 @@ Michal Marek 195387
 
 ## Project objectives
 
-Write your text here.
+* Posouvaní textu po 7-seg dipleji
+* Reset textu do výchozí pozice a rychlost posunu
+* Zrychlení/zpomalení posunu textu
+* Zvolit si z možnosti předefinovaných textů 
 
 <a name="hardware"></a>
 
