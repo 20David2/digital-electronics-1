@@ -47,7 +47,7 @@
     <Option Name="IPStaticSourceDir" Val="$PIPUSERFILESDIR/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
     <Option Name="DSABoardId" Val="nexys-a7-50t"/>
-    <Option Name="WTXSimLaunchSim" Val="61"/>
+    <Option Name="WTXSimLaunchSim" Val="86"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -84,6 +84,22 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/clock_enable.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Simulation_2/Simulation_2.srcs/sources_1/new/clock_enable.vhd"/>
+          <Attr Name="ImportTime" Val="1648024053"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/cnt_up_down.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Simulation_2/Simulation_2.srcs/sources_1/new/cnt_up_down.vhd"/>
+          <Attr Name="ImportTime" Val="1649943261"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/imports/new/char_to_code.vhd">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../Simulation_2/Simulation_2.srcs/sources_1/new/char_to_code.vhd"/>
@@ -94,6 +110,13 @@
       </File>
       <File Path="$PSRCDIR/sources_1/new/alphabet_to_code.vhd" Mode="AbsoluteFirst">
         <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/alphabet_code.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>

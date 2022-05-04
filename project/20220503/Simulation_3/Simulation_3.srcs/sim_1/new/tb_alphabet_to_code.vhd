@@ -1,5 +1,16 @@
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
+------------------------------------------------------------
+--
+-- Template for 4-digit 7-segment display driver testbench.
+-- Nexys A7-50T, Vivado v2020.1.1, EDA Playground
+--
+-- Copyright (c) 2020-Present Tomas Fryza
+-- Dept. of Radio Electronics, Brno Univ. of Technology, Czechia
+-- This work is licensed under the terms of the MIT license.
+--
+------------------------------------------------------------
+
+library ieee;
+use ieee.std_logic_1164.all;
 use work.bus_multiplexer_pkg.all;
 
 ------------------------------------------------------------
@@ -14,116 +25,68 @@ end entity tb_alphabet_to_code;
 ------------------------------------------------------------
 architecture testbench of tb_alphabet_to_code is
 
+    -- Local constants
+    constant c_CLK_100MHZ_PERIOD : time := 10 ns;
+
     -- Local signals
-    constant base_text_length : integer := 32;
+    signal s_clk_100MHz : std_logic;
+    signal s_reset : std_logic;
     
-    signal s_text_i : string (32 downto 1);
-    
-    signal s_code_1_o : std_logic_vector (5 downto 0);
-    signal s_code_2_o : std_logic_vector (5 downto 0);
-    signal s_code_3_o : std_logic_vector (5 downto 0);
-    signal s_code_4_o : std_logic_vector (5 downto 0);
-    signal s_code_5_o : std_logic_vector (5 downto 0);
-    signal s_code_6_o : std_logic_vector (5 downto 0);
-    signal s_code_7_o : std_logic_vector (5 downto 0);
-    signal s_code_8_o : std_logic_vector (5 downto 0);
-    signal s_code_9_o : std_logic_vector (5 downto 0);
-    signal s_code_10_o : std_logic_vector (5 downto 0);
-    signal s_code_11_o : std_logic_vector (5 downto 0);
-    signal s_code_12_o : std_logic_vector (5 downto 0);
-    signal s_code_13_o : std_logic_vector (5 downto 0);
-    signal s_code_14_o : std_logic_vector (5 downto 0);
-    signal s_code_15_o : std_logic_vector (5 downto 0);
-    signal s_code_16_o : std_logic_vector (5 downto 0);
-    signal s_code_17_o : std_logic_vector (5 downto 0);
-    signal s_code_18_o : std_logic_vector (5 downto 0);
-    signal s_code_19_o : std_logic_vector (5 downto 0);
-    signal s_code_20_o : std_logic_vector (5 downto 0);
-    signal s_code_21_o : std_logic_vector (5 downto 0);
-    signal s_code_22_o : std_logic_vector (5 downto 0);
-    signal s_code_23_o : std_logic_vector (5 downto 0);
-    signal s_code_24_o : std_logic_vector (5 downto 0);
-    signal s_code_25_o : std_logic_vector (5 downto 0);
-    signal s_code_26_o : std_logic_vector (5 downto 0);
-    signal s_code_27_o : std_logic_vector (5 downto 0);
-    signal s_code_28_o : std_logic_vector (5 downto 0);
-    signal s_code_29_o : std_logic_vector (5 downto 0);
-    signal s_code_30_o : std_logic_vector (5 downto 0);
-    signal s_code_31_o : std_logic_vector (5 downto 0);
-    signal s_code_32_o : std_logic_vector (5 downto 0);
-        
+    signal s_code   : array_vector;
+    signal s_text : string(32 downto 1);
+
 begin
-    -- Connecting testbench signals withalphabet_to_code entity
-    -- (Unit Under Test)
-    uut_alphabet : entity work.alphabet_to_code
-        generic map(
-            base_text_length_i  => base_text_length
-        )
+    -- Connecting testbench signals with driver_7seg_8characters
+    -- entity (Unit Under Test)
+
+    uut_alphabet_code : entity work.alphabet_code
         port map(
-            text_i           => s_text_i,
-            code_1_o    => s_code_1_o,
-            code_2_o    => s_code_2_o,
-            code_3_o    => s_code_3_o,
-            code_4_o    => s_code_4_o,
-            code_5_o    => s_code_5_o,
-            code_6_o    => s_code_6_o,
-            code_7_o    => s_code_7_o,
-            code_8_o    => s_code_8_o,
-            code_9_o    => s_code_9_o,
-            code_10_o    => s_code_10_o,
-            code_11_o    => s_code_11_o,
-            code_12_o    => s_code_12_o,
-            code_13_o    => s_code_13_o,
-            code_14_o    => s_code_14_o,
-            code_15_o    => s_code_15_o,
-            code_16_o    => s_code_16_o,
-            code_17_o    => s_code_17_o,
-            code_18_o    => s_code_18_o,
-            code_19_o    => s_code_19_o,
-            code_20_o    => s_code_20_o,
-            code_21_o    => s_code_21_o,
-            code_22_o    => s_code_22_o,
-            code_23_o    => s_code_23_o,
-            code_24_o    => s_code_24_o,
-            code_25_o    => s_code_25_o,
-            code_26_o    => s_code_26_o,
-            code_27_o    => s_code_27_o,
-            code_28_o    => s_code_28_o,
-            code_29_o    => s_code_29_o,
-            code_30_o    => s_code_30_o,
-            code_31_o    => s_code_31_o,
-            code_32_o    => s_code_32_o
-            
+            clk     => s_clk_100MHz,
+            reset   => s_reset,
+            text_i => s_text,
+            code_o => s_code
         );
+
+
+    --------------------------------------------------------
+    -- Clock generation process
+    --------------------------------------------------------
+    p_clk_gen : process
+    begin
+        while now < 1000 ns loop -- 75 periods of 100MHz clock
+            s_clk_100MHz <= '0';
+            wait for c_CLK_100MHZ_PERIOD / 2;
+            s_clk_100MHz <= '1';
+            wait for c_CLK_100MHZ_PERIOD / 2;
+        end loop;
+        wait;
+    end process p_clk_gen;
+
+    --------------------------------------------------------
+    -- Reset generation process
+    --------------------------------------------------------
+    p_reset_gen : process
+    begin
+        s_reset <= '0';
+        wait for 12 ns;
+         
+        -- Reset activated
+        s_reset <= '1';
+        wait for 12 ns;
+        s_reset <= '0';
+ 
+        wait;
+    end process p_reset_gen;
 
     --------------------------------------------------------
     -- Data generation process
     --------------------------------------------------------
-    -- TEST INPUT VALUES
+    -- TEST INPUT VALUE "01234567"
     p_stimulus : process
     begin
         report "Stimulus process started" severity note;
         
-
-        s_text_i(1) <= 'A';
---        wait for 100 ns;
---        s_text_i(2) <= '2';
---        wait for 100 ns; 
---        s_text_i(3) <= '3';
---        wait for 100 ns; 
---        s_text_i(4) <= '4';
---        wait for 100 ns;
---        s_text_i(5) <= '5';
---        wait for 100 ns; 
---        s_text_i(6) <= '6'; 
---        wait for 100 ns; 
-   
-        
---        wait for 100 ns;
---        s_text_length_i <= 1;
---        s_text_i(1) <= '2';
-        
---        wait for 100 ns;
+       s_text <= "Ahoj Ahoj Ahoj Ahoj Ahoj Ahoj Ah";
         
         report "Stimulus process finished" severity note;
         wait;

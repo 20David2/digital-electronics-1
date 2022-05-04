@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed May  4 19:09:39 2022
+# Process ID: 27308
+# Current directory: C:/Users/david/Desktop/project_Finish/project_Finish.runs/impl_1
+# Command line: vivado.exe -log newtop.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source newtop.tcl -notrace
+# Log file: C:/Users/david/Desktop/project_Finish/project_Finish.runs/impl_1/newtop.vdi
+# Journal file: C:/Users/david/Desktop/project_Finish/project_Finish.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source newtop.tcl -notrace
+Command: open_checkpoint newtop_routed.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 1000.145 ; gain = 0.000
+INFO: [Device 21-403] Loading part xc7a50ticsg324-1L
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1000.145 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 20 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.

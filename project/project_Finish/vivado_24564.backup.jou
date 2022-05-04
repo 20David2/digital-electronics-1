@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed May  4 18:06:51 2022
+# Process ID: 24564
+# Current directory: D:/project_Finish
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent30380 D:\project_Finish\project_Finish.xpr
+# Log file: D:/project_Finish/vivado.log
+# Journal file: D:/project_Finish\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/project_Finish/project_Finish.xpr
+update_compile_order -fileset sources_1
+reset_run impl_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+open_run impl_1
+close_design
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+current_hw_device [get_hw_devices xc7a50t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a50t_0] 0]
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_run impl_1

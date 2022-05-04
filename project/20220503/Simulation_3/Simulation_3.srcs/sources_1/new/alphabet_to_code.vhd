@@ -20,6 +20,8 @@ entity alphabet_to_code is
         base_text_length_i : in integer := 32
     );
     Port (
+        clk : in std_logic;
+        reset : in std_logic;
         text_i : in string (32 downto 1);
         
         code_1_o : out std_logic_vector(5 downto 0);
@@ -64,6 +66,8 @@ architecture Behavioral of alphabet_to_code is
 signal s_char : character;
 signal code_char : std_logic_vector(5 downto 0);
 signal test : std_logic_vector(5 downto 0);
+signal s_en : std_logic;
+signal s_cnt : std_logic_vector(5-1 downto 0);
 
 
 begin   
@@ -73,14 +77,53 @@ begin
     port map(
         char_i => s_char,
         code_o => code_char
-    );        
+    );
+    --------------------------------------------------------
+    -- Instance (copy) of clock_enable entity generates 
+    -- an enable pulse every 4 ms
+    clk_en0 : entity work.clock_enable
+        generic map(
+            g_MAX => 4    -- FOR SIMULATION, CHANGE THIS VALUE TO 4
+            --g_MAX => 200000 -- FOR IMPLEMENTATION, KEEP THIS VALUE TO 400,000    
+        )
+        port map(
+            clk   => clk,   -- Main clock
+            reset => reset, -- Synchronous reset
+            ce_o  => s_en
+        );
+    --------------------------------------------------------
+    -- Instance (copy) of cnt_up_down entity performs a 3-bit
+    -- up-down counter
+    bin_cnt0 : entity work.cnt_up_down
+        generic map(
+            g_CNT_WIDTH => 5
+        )
+        port map(
+            clk      => clk,        -- Main clock
+            reset    => reset,      -- Synchronous reset
+            en_i     => s_en,       -- Enable input
+            cnt_up_i => '1',          -- Direction of the counter
+            cnt_o    => s_cnt       -- Output of the counter 
+
+        );        
         
-    p_code : process(text_i)
+    p_code : process(clk, s_cnt)
     begin
     
-        s_char <= 'b';
-        test <= code_char;
-        code_1_o <= test;
+        if rising_edge(clk) then
+        case s_cnt is
+        
+                when "00000" =>
+                    s_char <= 'b';
+                    code_1_o <= code_char;
+                           
+                when "00001" =>
+                  s_char <= '0';
+                  code_2_o <= code_char;
+                  
+                when others => 
+        end case;
+        end if;
         
 --        test_o <= code_char;
 

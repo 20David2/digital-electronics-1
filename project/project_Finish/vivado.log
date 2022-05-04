@@ -1,0 +1,686 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed May  4 18:17:53 2022
+# Process ID: 20092
+# Current directory: C:/Users/david/Desktop/project_Finish
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9900 C:\Users\david\Desktop\project_Finish\project_Finish.xpr
+# Log file: C:/Users/david/Desktop/project_Finish/vivado.log
+# Journal file: C:/Users/david/Desktop/project_Finish\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/david/Desktop/project_Finish/project_Finish.xpr
+INFO: [Project 1-313] Project file moved from 'D:/project_Finish' since last save.
+WARNING: [filemgmt 56-2] Default IP Output Path : Could not find the directory 'C:/Users/david/Desktop/project_Finish/project_Finish.gen/sources_1', nor could it be found using path 'D:/project_Finish/project_Finish.gen/sources_1'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'F:/project/Simulation_3/Simulation_3.srcs/sim_1/new/tb_alphabet_to_code.vhd'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Wed May  4 18:18:57 2022] Launched synth_1...
+Run output will be captured here: C:/Users/david/Desktop/project_Finish/project_Finish.runs/synth_1/runme.log
+[Wed May  4 18:18:57 2022] Launched impl_1...
+Run output will be captured here: C:/Users/david/Desktop/project_Finish/project_Finish.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7a50ticsg324-1L
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1191.574 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 35 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.075 . Memory (MB): peak = 1737.574 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.075 . Memory (MB): peak = 1737.574 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1737.574 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:20 ; elapsed = 00:00:15 . Memory (MB): peak = 1865.828 ; gain = 674.254
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 03 2020-22:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1992.488 ; gain = 16.336
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292AD2E25A
+set_property PROGRAM.FILE {C:/Users/david/Desktop/project_Finish/project_Finish.runs/impl_1/newtop.bit} [get_hw_devices xc7a50t_0]
+current_hw_device [get_hw_devices xc7a50t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a50t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a50t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property PROGRAM.FILE {C:/Users/david/Desktop/project_Finish/project_Finish.runs/impl_1/newtop.bit} [get_hw_devices xc7a50t_0]
+program_hw_devices [get_hw_devices xc7a50t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a50t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a50t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+close_design
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Wed May  4 18:23:26 2022] Launched impl_1...
+Run output will be captured here: C:/Users/david/Desktop/project_Finish/project_Finish.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 03 2020-22:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 3594.656 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292AD2E25A
+set_property PROGRAM.FILE {C:/Users/david/Desktop/project_Finish/project_Finish.runs/impl_1/newtop.bit} [get_hw_devices xc7a50t_0]
+current_hw_device [get_hw_devices xc7a50t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a50t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a50t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property PROGRAM.FILE {C:/Users/david/Desktop/project_Finish/project_Finish.runs/impl_1/newtop.bit} [get_hw_devices xc7a50t_0]
+program_hw_devices [get_hw_devices xc7a50t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a50t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a50t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Wed May  4 18:26:21 2022] Launched impl_1...
+Run output will be captured here: C:/Users/david/Desktop/project_Finish/project_Finish.runs/impl_1/runme.log
+close_hw_manager
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Wed May  4 18:27:14 2022] Launched synth_1...
+Run output will be captured here: C:/Users/david/Desktop/project_Finish/project_Finish.runs/synth_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Wed May  4 18:28:12 2022] Launched impl_1...
+Run output will be captured here: C:/Users/david/Desktop/project_Finish/project_Finish.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 03 2020-22:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 3594.656 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292AD2E25A
+set_property PROGRAM.FILE {C:/Users/david/Desktop/project_Finish/project_Finish.runs/impl_1/newtop.bit} [get_hw_devices xc7a50t_0]
+current_hw_device [get_hw_devices xc7a50t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a50t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a50t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property PROGRAM.FILE {C:/Users/david/Desktop/project_Finish/project_Finish.runs/impl_1/newtop.bit} [get_hw_devices xc7a50t_0]
+program_hw_devices [get_hw_devices xc7a50t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a50t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a50t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Wed May  4 18:31:07 2022] Launched impl_1...
+Run output will be captured here: C:/Users/david/Desktop/project_Finish/project_Finish.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Wed May  4 18:31:25 2022] Launched synth_1...
+Run output will be captured here: C:/Users/david/Desktop/project_Finish/project_Finish.runs/synth_1/runme.log
+[Wed May  4 18:31:25 2022] Launched impl_1...
+Run output will be captured here: C:/Users/david/Desktop/project_Finish/project_Finish.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 03 2020-22:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 3594.656 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292AD2E25A
+set_property PROGRAM.FILE {C:/Users/david/Desktop/project_Finish/project_Finish.runs/impl_1/newtop.bit} [get_hw_devices xc7a50t_0]
+current_hw_device [get_hw_devices xc7a50t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a50t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a50t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property PROGRAM.FILE {C:/Users/david/Desktop/project_Finish/project_Finish.runs/impl_1/newtop.bit} [get_hw_devices xc7a50t_0]
+program_hw_devices [get_hw_devices xc7a50t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a50t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a50t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Wed May  4 18:34:05 2022] Launched synth_1...
+Run output will be captured here: C:/Users/david/Desktop/project_Finish/project_Finish.runs/synth_1/runme.log
+[Wed May  4 18:34:05 2022] Launched impl_1...
+Run output will be captured here: C:/Users/david/Desktop/project_Finish/project_Finish.runs/impl_1/runme.log
+close_hw_manager
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 03 2020-22:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 3594.656 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292AD2E25A
+set_property PROGRAM.FILE {C:/Users/david/Desktop/project_Finish/project_Finish.runs/impl_1/newtop.bit} [get_hw_devices xc7a50t_0]
+current_hw_device [get_hw_devices xc7a50t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a50t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a50t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property PROGRAM.FILE {C:/Users/david/Desktop/project_Finish/project_Finish.runs/impl_1/newtop.bit} [get_hw_devices xc7a50t_0]
+program_hw_devices [get_hw_devices xc7a50t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a50t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a50t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Wed May  4 18:40:41 2022] Launched synth_1...
+Run output will be captured here: C:/Users/david/Desktop/project_Finish/project_Finish.runs/synth_1/runme.log
+[Wed May  4 18:40:41 2022] Launched impl_1...
+Run output will be captured here: C:/Users/david/Desktop/project_Finish/project_Finish.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 03 2020-22:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 3594.656 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292AD2E25A
+set_property PROGRAM.FILE {C:/Users/david/Desktop/project_Finish/project_Finish.runs/impl_1/newtop.bit} [get_hw_devices xc7a50t_0]
+current_hw_device [get_hw_devices xc7a50t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a50t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a50t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property PROGRAM.FILE {C:/Users/david/Desktop/project_Finish/project_Finish.runs/impl_1/newtop.bit} [get_hw_devices xc7a50t_0]
+program_hw_devices [get_hw_devices xc7a50t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a50t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a50t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Wed May  4 18:46:29 2022] Launched synth_1...
+Run output will be captured here: C:/Users/david/Desktop/project_Finish/project_Finish.runs/synth_1/runme.log
+[Wed May  4 18:46:29 2022] Launched impl_1...
+Run output will be captured here: C:/Users/david/Desktop/project_Finish/project_Finish.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 03 2020-22:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 3594.656 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292AD2E25A
+set_property PROGRAM.FILE {C:/Users/david/Desktop/project_Finish/project_Finish.runs/impl_1/newtop.bit} [get_hw_devices xc7a50t_0]
+current_hw_device [get_hw_devices xc7a50t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a50t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a50t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property PROGRAM.FILE {C:/Users/david/Desktop/project_Finish/project_Finish.runs/impl_1/newtop.bit} [get_hw_devices xc7a50t_0]
+program_hw_devices [get_hw_devices xc7a50t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a50t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a50t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Wed May  4 18:55:45 2022] Launched synth_1...
+Run output will be captured here: C:/Users/david/Desktop/project_Finish/project_Finish.runs/synth_1/runme.log
+[Wed May  4 18:55:45 2022] Launched impl_1...
+Run output will be captured here: C:/Users/david/Desktop/project_Finish/project_Finish.runs/impl_1/runme.log
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/david/Desktop/project_Finish/project_Finish.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_newtop' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/david/Desktop/project_Finish/project_Finish.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_newtop_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/david/Desktop/project_Finish/project_Finish.srcs/sources_1/new/alphabet_7seg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'alphabet_7seg'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/david/Desktop/project_Finish/project_Finish.srcs/sources_1/new/bus_multiplexer_pkg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/david/Desktop/project_Finish/project_Finish.srcs/sources_1/new/clock_enable.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'clock_enable'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/david/Desktop/project_Finish/project_Finish.srcs/sources_1/new/cnt_up_down.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'cnt_up_down'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/david/Desktop/project_Finish/project_Finish.srcs/sources_1/new/char_to_code.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'char_to_code'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/david/Desktop/project_Finish/project_Finish.srcs/sources_1/new/alphabet_to_code.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'alphabet_code'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/david/Desktop/project_Finish/project_Finish.srcs/sources_1/new/driver_7seg_8characters.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'driver_7seg_8characters'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/david/Desktop/project_Finish/project_Finish.srcs/sources_1/new/move_text.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'move_text'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/david/Desktop/project_Finish/project_Finish.srcs/sources_1/new/switch_to_message.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'switch_to_message'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/david/Desktop/project_Finish/project_Finish.srcs/sources_1/new/newtop.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'newtop'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/david/Desktop/project_Finish/project_Finish.srcs/sim_1/new/tb_newtop.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_newtop'
+ERROR: [VRFC 10-3353] formal port 'btnd' has no actual or default value [C:/Users/david/Desktop/project_Finish/project_Finish.srcs/sim_1/new/tb_newtop.vhd:59]
+ERROR: [VRFC 10-3782] unit 'behavioral' ignored due to previous errors [C:/Users/david/Desktop/project_Finish/project_Finish.srcs/sim_1/new/tb_newtop.vhd:40]
+INFO: [VRFC 10-3070] VHDL file 'C:/Users/david/Desktop/project_Finish/project_Finish.srcs/sim_1/new/tb_newtop.vhd' ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/david/Desktop/project_Finish/project_Finish.sim/sim_1/behav/xsim/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/david/Desktop/project_Finish/project_Finish.sim/sim_1/behav/xsim/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+set_property PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property PROGRAM.FILE {C:/Users/david/Desktop/project_Finish/project_Finish.runs/impl_1/newtop.bit} [get_hw_devices xc7a50t_0]
+program_hw_devices [get_hw_devices xc7a50t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a50t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a50t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Wed May  4 19:01:29 2022] Launched impl_1...
+Run output will be captured here: C:/Users/david/Desktop/project_Finish/project_Finish.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+reset_run impl_1 -prev_step 
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/david/Desktop/project_Finish/project_Finish.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_newtop' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/david/Desktop/project_Finish/project_Finish.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_newtop_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/david/Desktop/project_Finish/project_Finish.srcs/sources_1/new/alphabet_7seg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'alphabet_7seg'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/david/Desktop/project_Finish/project_Finish.srcs/sources_1/new/bus_multiplexer_pkg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/david/Desktop/project_Finish/project_Finish.srcs/sources_1/new/clock_enable.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'clock_enable'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/david/Desktop/project_Finish/project_Finish.srcs/sources_1/new/cnt_up_down.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'cnt_up_down'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/david/Desktop/project_Finish/project_Finish.srcs/sources_1/new/char_to_code.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'char_to_code'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/david/Desktop/project_Finish/project_Finish.srcs/sources_1/new/alphabet_to_code.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'alphabet_code'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/david/Desktop/project_Finish/project_Finish.srcs/sources_1/new/driver_7seg_8characters.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'driver_7seg_8characters'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/david/Desktop/project_Finish/project_Finish.srcs/sources_1/new/move_text.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'move_text'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/david/Desktop/project_Finish/project_Finish.srcs/sources_1/new/switch_to_message.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'switch_to_message'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/david/Desktop/project_Finish/project_Finish.srcs/sources_1/new/newtop.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'newtop'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/david/Desktop/project_Finish/project_Finish.srcs/sim_1/new/tb_newtop.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_newtop'
+ERROR: [VRFC 10-3353] formal port 'btnd' has no actual or default value [C:/Users/david/Desktop/project_Finish/project_Finish.srcs/sim_1/new/tb_newtop.vhd:59]
+ERROR: [VRFC 10-3782] unit 'behavioral' ignored due to previous errors [C:/Users/david/Desktop/project_Finish/project_Finish.srcs/sim_1/new/tb_newtop.vhd:40]
+INFO: [VRFC 10-3070] VHDL file 'C:/Users/david/Desktop/project_Finish/project_Finish.srcs/sim_1/new/tb_newtop.vhd' ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/david/Desktop/project_Finish/project_Finish.sim/sim_1/behav/xsim/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/david/Desktop/project_Finish/project_Finish.sim/sim_1/behav/xsim/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/david/Desktop/project_Finish/project_Finish.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_newtop' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/david/Desktop/project_Finish/project_Finish.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_newtop_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/david/Desktop/project_Finish/project_Finish.srcs/sources_1/new/alphabet_7seg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'alphabet_7seg'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/david/Desktop/project_Finish/project_Finish.srcs/sources_1/new/bus_multiplexer_pkg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/david/Desktop/project_Finish/project_Finish.srcs/sources_1/new/clock_enable.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'clock_enable'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/david/Desktop/project_Finish/project_Finish.srcs/sources_1/new/cnt_up_down.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'cnt_up_down'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/david/Desktop/project_Finish/project_Finish.srcs/sources_1/new/char_to_code.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'char_to_code'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/david/Desktop/project_Finish/project_Finish.srcs/sources_1/new/alphabet_to_code.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'alphabet_code'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/david/Desktop/project_Finish/project_Finish.srcs/sources_1/new/driver_7seg_8characters.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'driver_7seg_8characters'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/david/Desktop/project_Finish/project_Finish.srcs/sources_1/new/move_text.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'move_text'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/david/Desktop/project_Finish/project_Finish.srcs/sources_1/new/switch_to_message.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'switch_to_message'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/david/Desktop/project_Finish/project_Finish.srcs/sources_1/new/newtop.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'newtop'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/david/Desktop/project_Finish/project_Finish.srcs/sim_1/new/tb_newtop.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_newtop'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/david/Desktop/project_Finish/project_Finish.sim/sim_1/behav/xsim'
+"xelab -wto 965d6553ff2240e4929c6995112f0341 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_newtop_behav xil_defaultlib.tb_newtop -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 965d6553ff2240e4929c6995112f0341 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_newtop_behav xil_defaultlib.tb_newtop -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3813] value in initialization depends on signal 'code_i' [C:/Users/david/Desktop/project_Finish/project_Finish.srcs/sources_1/new/move_text.vhd:62]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package xil_defaultlib.bus_multiplexer_pkg
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.switch_to_message [\switch_to_message(15,0)(32,1)\]
+Compiling architecture behavioral of entity xil_defaultlib.clock_enable [clock_enable_default]
+Compiling architecture behavioral of entity xil_defaultlib.cnt_up_down [\cnt_up_down(g_cnt_width=5)\]
+Compiling architecture behavioral of entity xil_defaultlib.char_to_code [char_to_code_default]
+Compiling architecture behavioral of entity xil_defaultlib.alphabet_code [alphabet_code_default]
+Compiling architecture behavioral of entity xil_defaultlib.clock_enable [\clock_enable(g_max=50000000)\]
+Compiling architecture behavioral of entity xil_defaultlib.move_text [move_text_default]
+Compiling architecture behavioral of entity xil_defaultlib.clock_enable [\clock_enable(g_max=200000)\]
+Compiling architecture behavioral of entity xil_defaultlib.cnt_up_down [cnt_up_down_default]
+Compiling architecture behavioral of entity xil_defaultlib.alphabet_7seg [alphabet_7seg_default]
+Compiling architecture behavioral of entity xil_defaultlib.driver_7seg_8characters [driver_7seg_8characters_default]
+Compiling architecture behavioral of entity xil_defaultlib.newtop [newtop_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_newtop
+Built simulation snapshot tb_newtop_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/david/Desktop/project_Finish/project_Finish.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_newtop_behav -key {Behavioral:sim_1:Functional:tb_newtop} -tclbatch {tb_newtop.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source tb_newtop.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Note: Stimulus process started
+Time: 0 ps  Iteration: 0  Process: /tb_newtop/p_stimulus  File: C:/Users/david/Desktop/project_Finish/project_Finish.srcs/sim_1/new/tb_newtop.vhd
+Note: Stimulus process finished
+Time: 0 ps  Iteration: 0  Process: /tb_newtop/p_stimulus  File: C:/Users/david/Desktop/project_Finish/project_Finish.srcs/sim_1/new/tb_newtop.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_newtop_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 3594.656 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/david/Desktop/project_Finish/project_Finish.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_newtop' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/david/Desktop/project_Finish/project_Finish.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_newtop_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/david/Desktop/project_Finish/project_Finish.srcs/sources_1/new/driver_7seg_8characters.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'driver_7seg_8characters'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/david/Desktop/project_Finish/project_Finish.srcs/sources_1/new/newtop.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'newtop'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/david/Desktop/project_Finish/project_Finish.srcs/sim_1/new/tb_newtop.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_newtop'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/david/Desktop/project_Finish/project_Finish.sim/sim_1/behav/xsim'
+"xelab -wto 965d6553ff2240e4929c6995112f0341 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_newtop_behav xil_defaultlib.tb_newtop -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 965d6553ff2240e4929c6995112f0341 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_newtop_behav xil_defaultlib.tb_newtop -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3813] value in initialization depends on signal 'code_i' [C:/Users/david/Desktop/project_Finish/project_Finish.srcs/sources_1/new/move_text.vhd:62]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package xil_defaultlib.bus_multiplexer_pkg
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.switch_to_message [\switch_to_message(15,0)(32,1)\]
+Compiling architecture behavioral of entity xil_defaultlib.clock_enable [clock_enable_default]
+Compiling architecture behavioral of entity xil_defaultlib.cnt_up_down [\cnt_up_down(g_cnt_width=5)\]
+Compiling architecture behavioral of entity xil_defaultlib.char_to_code [char_to_code_default]
+Compiling architecture behavioral of entity xil_defaultlib.alphabet_code [alphabet_code_default]
+Compiling architecture behavioral of entity xil_defaultlib.clock_enable [\clock_enable(g_max=50000000)\]
+Compiling architecture behavioral of entity xil_defaultlib.move_text [move_text_default]
+Compiling architecture behavioral of entity xil_defaultlib.clock_enable [\clock_enable(g_max=4)\]
+Compiling architecture behavioral of entity xil_defaultlib.cnt_up_down [cnt_up_down_default]
+Compiling architecture behavioral of entity xil_defaultlib.alphabet_7seg [alphabet_7seg_default]
+Compiling architecture behavioral of entity xil_defaultlib.driver_7seg_8characters [driver_7seg_8characters_default]
+Compiling architecture behavioral of entity xil_defaultlib.newtop [newtop_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_newtop
+Built simulation snapshot tb_newtop_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/david/Desktop/project_Finish/project_Finish.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_newtop_behav -key {Behavioral:sim_1:Functional:tb_newtop} -tclbatch {tb_newtop.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source tb_newtop.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Note: Stimulus process started
+Time: 0 ps  Iteration: 0  Process: /tb_newtop/p_stimulus  File: C:/Users/david/Desktop/project_Finish/project_Finish.srcs/sim_1/new/tb_newtop.vhd
+Note: Stimulus process finished
+Time: 0 ps  Iteration: 0  Process: /tb_newtop/p_stimulus  File: C:/Users/david/Desktop/project_Finish/project_Finish.srcs/sim_1/new/tb_newtop.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_newtop_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 3594.656 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/david/Desktop/project_Finish/project_Finish.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Wed May  4 19:06:58 2022] Launched synth_1...
+Run output will be captured here: C:/Users/david/Desktop/project_Finish/project_Finish.runs/synth_1/runme.log
+[Wed May  4 19:06:58 2022] Launched impl_1...
+Run output will be captured here: C:/Users/david/Desktop/project_Finish/project_Finish.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 03 2020-22:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 3594.656 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292AD2E25A
+set_property PROGRAM.FILE {C:/Users/david/Desktop/project_Finish/project_Finish.runs/impl_1/newtop.bit} [get_hw_devices xc7a50t_0]
+current_hw_device [get_hw_devices xc7a50t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a50t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a50t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property PROGRAM.FILE {C:/Users/david/Desktop/project_Finish/project_Finish.runs/impl_1/newtop.bit} [get_hw_devices xc7a50t_0]
+program_hw_devices [get_hw_devices xc7a50t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a50t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a50t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292AD2E25A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292AD2E25A
+INFO: [Labtools 27-1435] Device xc7a50t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Wed May  4 19:09:26 2022] Launched impl_1...
+Run output will be captured here: C:/Users/david/Desktop/project_Finish/project_Finish.runs/impl_1/runme.log

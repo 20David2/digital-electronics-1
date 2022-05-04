@@ -1,0 +1,29 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 965d6553ff2240e4929c6995112f0341 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_newtop_behav xil_defaultlib.tb_newtop -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3813] value in initialization depends on signal 'code_i' [C:/Users/david/Desktop/project_Finish/project_Finish.srcs/sources_1/new/move_text.vhd:62]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package xil_defaultlib.bus_multiplexer_pkg
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.switch_to_message [\switch_to_message(15,0)(32,1)\]
+Compiling architecture behavioral of entity xil_defaultlib.clock_enable [clock_enable_default]
+Compiling architecture behavioral of entity xil_defaultlib.cnt_up_down [\cnt_up_down(g_cnt_width=5)\]
+Compiling architecture behavioral of entity xil_defaultlib.char_to_code [char_to_code_default]
+Compiling architecture behavioral of entity xil_defaultlib.alphabet_code [alphabet_code_default]
+Compiling architecture behavioral of entity xil_defaultlib.clock_enable [\clock_enable(g_max=50000000)\]
+Compiling architecture behavioral of entity xil_defaultlib.move_text [move_text_default]
+Compiling architecture behavioral of entity xil_defaultlib.clock_enable [\clock_enable(g_max=4)\]
+Compiling architecture behavioral of entity xil_defaultlib.cnt_up_down [cnt_up_down_default]
+Compiling architecture behavioral of entity xil_defaultlib.alphabet_7seg [alphabet_7seg_default]
+Compiling architecture behavioral of entity xil_defaultlib.driver_7seg_8characters [driver_7seg_8characters_default]
+Compiling architecture behavioral of entity xil_defaultlib.newtop [newtop_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_newtop
+Built simulation snapshot tb_newtop_behav

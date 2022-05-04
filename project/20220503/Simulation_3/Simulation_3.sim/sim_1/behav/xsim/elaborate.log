@@ -11,7 +11,10 @@ Compiling package std.standard
 Compiling package std.textio
 Compiling package ieee.std_logic_1164
 Compiling package xil_defaultlib.bus_multiplexer_pkg
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.clock_enable [\clock_enable(g_max=1)\]
+Compiling architecture behavioral of entity xil_defaultlib.cnt_up_down [\cnt_up_down(g_cnt_width=5)\]
 Compiling architecture behavioral of entity xil_defaultlib.char_to_code [char_to_code_default]
-Compiling architecture behavioral of entity xil_defaultlib.alphabet_to_code [alphabet_to_code_default]
+Compiling architecture behavioral of entity xil_defaultlib.alphabet_code [alphabet_code_default]
 Compiling architecture testbench of entity xil_defaultlib.tb_alphabet_to_code
 Built simulation snapshot tb_alphabet_to_code_behav
