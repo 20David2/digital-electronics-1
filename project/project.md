@@ -76,4 +76,8 @@ Write your text here
 * https://digilent.com/reference/programmable-logic/nexys-a7/reference-manual
 3. Fce 7-seg displeje
 * https://lastminuteengineers.b-cdn.net/wp-content/uploads/arduino/Common-Cathode-7-Segment-Display-Internal-Working.gif
+4. Popis 7-seg displeje
+* https://lastminuteengineers.com/seven-segment-arduino-tutorial/
+5. Nejdel39 7-seg slovo
+* https://codegolf.stackexchange.com/questions/173837/longest-seven-segment-word
 
