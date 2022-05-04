@@ -14,7 +14,7 @@ entity switch_to_message is
         );
 end switch_to_message;
 ```
-1. Save message to switch 
+1. Save message to switch 1
 
 ```vhdl
  case sw_state_i  is          
@@ -24,3 +24,5 @@ end switch_to_message;
                 text_o(Message1'length downto 1) <= Message1;
                 text_length <= Message1'length;
 ```
+2. Simulation 
+![Simulation screenshot](images/switch_to_message_simulation_console.png)
