@@ -25,4 +25,4 @@ end switch_to_message;
                 text_length <= Message1'length;
 ```
 2. Simulation 
-![screenshot](images/switch_to_message_simulation_console.png)
+![screenshot](..images/switch_to_message_simulation_console.png)
