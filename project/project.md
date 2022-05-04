@@ -26,8 +26,7 @@ Michal Marek 195387
 ## Project objectives
 
 * Posouvaní textu po 7-seg dipleji
-* Reset textu do výchozí pozice a rychlost posunu
-* Zrychlení/zpomalení posunu textu
+* Reset textu do výchozí pozice a rychlost
 * Zvolit si z možnosti předefinovaných textů 
 
 <a name="hardware"></a>
