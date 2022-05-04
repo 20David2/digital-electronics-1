@@ -4,13 +4,17 @@
 
 David Strouhal 230671
 
-Responsible for
+Responsible for code
 * https://github.com/20David2/digital-electronics-1
 
 Martin Zárecký 230916
+
+Responsible for presentation
 * https://github.com/Martinececicek
 
 Michal Marek 195387
+
+Responsible for documentation
 * https://github.com/MichalMarek2010/digital-electronics-1
 
 
