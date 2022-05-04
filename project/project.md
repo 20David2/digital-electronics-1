@@ -37,7 +37,17 @@ Write your text here.
 
 ## Popis a simulace modulů VHDL
 
-Write your text here.
+Zobrazení znaků na 7-seg displej
+* https://github.com/20David2/digital-electronics-1/blob/main/project/docs/alphabet_7seg.md
+
+Zprovoznění hodinového signálu
+* https://github.com/20David2/digital-electronics-1/blob/main/project/docs/clock_enable.md
+
+Sčítač
+* https://github.com/20David2/digital-electronics-1/blob/main/project/docs/cnt_up_down.md
+
+Odesílaní znaků na 7-seg displej
+* https://github.com/20David2/digital-electronics-1/blob/main/project/docs/driver_7seg_8characters.md
 
 <a name="top"></a>
 
