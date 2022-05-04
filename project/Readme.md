@@ -1,6 +1,6 @@
-Runing text 7-seg display
+# Runing text 7-seg display
 
--Tlacitka:
+## Tlacitka:
 * BTNC (prostredni): reset
 * BTNU,BTND (nahoru,dolu): rychlost behu +-
 * BTNL,BTNR (vpravo,vlevo): pokud je rychlost snizena na minimum -> posun o jeden znak
