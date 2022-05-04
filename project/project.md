@@ -48,7 +48,7 @@ Zobrazení znaků na 7-seg displej
 Zprovoznění hodinového signálu
 * https://github.com/20David2/digital-electronics-1/blob/main/project/docs/clock_enable.md
 
-Sčítač
+Čítač
 * https://github.com/20David2/digital-electronics-1/blob/main/project/docs/cnt_up_down.md
 
 Odesílaní znaků na 7-seg displej
@@ -74,7 +74,7 @@ Write your text here
 * https://codegolf.stackexchange.com/questions/173837/longest-seven-segment-word
 2. Nexs A7 Refernce Manual
 * https://digilent.com/reference/programmable-logic/nexys-a7/reference-manual
-3. Fce 7-seg displeje
+3. Segmenty 7-seg displeje
 * https://lastminuteengineers.b-cdn.net/wp-content/uploads/arduino/Common-Cathode-7-Segment-Display-Internal-Working.gif
 4. Popis 7-seg displeje
 * https://lastminuteengineers.com/seven-segment-arduino-tutorial/
