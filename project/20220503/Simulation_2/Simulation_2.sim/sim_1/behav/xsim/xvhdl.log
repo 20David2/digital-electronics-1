@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/david/OneDrive/Dokumenty/GitHub/digital-electronics-1/project/20220503/Simulation_2/Simulation_2.srcs/sources_1/new/alphabet_2_code.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'alphabet_2_code'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/david/OneDrive/Dokumenty/GitHub/digital-electronics-1/project/20220503/Simulation_2/Simulation_2.srcs/sim_1/new/tb_alphabet_2_code.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_alphabet_2_code'

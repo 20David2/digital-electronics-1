@@ -4,4 +4,14 @@ Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 469fe8d5eb
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
-ERROR: [XSIM 43-4187] File "C:/Users/david/OneDrive/Dokumenty/GitHub/digital-electronics-1/project/20220503/Simulation/Simulation.srcs/sim_1/new/tb_alphabet_to_code.vhd" Line 23 : The "Vhdl 2008 Unconstrained Array Type as Subtype in Array Type Definition" is not supported yet for simulation.
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package xil_defaultlib.bus_multiplexer_pkg
+Compiling architecture behavioral of entity xil_defaultlib.char_to_code [char_to_code_default]
+Compiling architecture behavioral of entity xil_defaultlib.alphabet_to_code [\alphabet_to_code(base_text_leng...]
+Compiling architecture testbench of entity xil_defaultlib.tb_alphabet_to_code
+Built simulation snapshot tb_alphabet_to_code_behav
