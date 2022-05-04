@@ -65,4 +65,6 @@ Write your text here
 
 ## References
 
-1. Write your text here.
+* Tabulka znaků na 7-seg displeji
+1. https://codegolf.stackexchange.com/questions/173837/longest-seven-segment-word
+
