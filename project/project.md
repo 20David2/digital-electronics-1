@@ -69,3 +69,6 @@ Write your text here
 * https://codegolf.stackexchange.com/questions/173837/longest-seven-segment-word
 2. Nexs A7 Refernce Manual
 * https://digilent.com/reference/programmable-logic/nexys-a7/reference-manual
+3. Fce 7-seg displeje
+* https://lastminuteengineers.b-cdn.net/wp-content/uploads/arduino/Common-Cathode-7-Segment-Display-Internal-Working.gif
+
