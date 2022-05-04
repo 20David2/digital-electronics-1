@@ -3,6 +3,7 @@
 ### Team members
 
 David Strouhal 230671
+
 Responsible for
 * https://github.com/20David2/digital-electronics-1
 
