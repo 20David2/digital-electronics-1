@@ -2,3 +2,6 @@ Running: xsim.dir/tb_alphabet_to_code_behav/xsimk.exe -simmode gui -wdb tb_alpha
 Design successfully loaded
 Design Loading Memory Usage: 6084 KB (Peak: 6084 KB)
 Design Loading CPU Usage: 15 ms
+Simulation completed
+Simulation Memory Usage: 6672 KB (Peak: 6672 KB)
+Simulation CPU Usage: 203 ms
