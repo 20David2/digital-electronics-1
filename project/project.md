@@ -31,7 +31,7 @@ Write your text here.
 
 ## Hardware description
 
-Write your text here.
+Pro programování a simulování vytvořených codů využíváme desku Nexys A7 s FPGA Artix 7. Deska zaručuje velkou externí pamět, vysokokapacitní FPGA, sbírku USB a Ethernet protů. Díky tomu mužeme vytvařet navrhy kombinačních obvodů. Kromě toho obsahuje také moduly měření teploty, akcelerometr, digitalní microfon nebo zesilovač reproduktorů. 
 
 <a name="modules"></a>
 
