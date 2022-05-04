@@ -51,7 +51,7 @@ begin
             when "000001" =>
                 seg_o <= "1001111"; -- 1
                 
-			when "000010" =>
+	    when "000010" =>
                 seg_o <= "0010010"; -- 2
 
             when "000011" =>
@@ -99,7 +99,7 @@ begin
             when "010001" =>
                 seg_o <= "1101000"; -- h
                 
-			when "010010" =>
+	    when "010010" =>
                 seg_o <= "1111001"; -- I
 
             when "010011" =>
@@ -141,7 +141,7 @@ begin
             when "011111" =>
                 seg_o <= "1000101"; -- V
                 
-			when "100000" =>
+	    when "100000" =>
                 seg_o <= "1010101"; -- W
 
             when "100001" =>
@@ -150,13 +150,13 @@ begin
             when "100010" =>
                 seg_o <= "1000100"; -- y
            
-			when "100011" =>
+	    when "100011" =>
                 seg_o <= "0010110"; -- Z
 			
             when "100100" =>
                 seg_o <= "1111111"; --  (Space)
                 
-			when others =>
+	    when others =>
                 seg_o <= "1111111"; --  (space)
         end case;
     end process p_7seg_decoder;
