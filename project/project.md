@@ -1,6 +1,6 @@
 # Bežící text na 7-seg displeji
 
-### Členové týmu
+### Team members
 
 David Strouhal 230671
 * https://github.com/20David2/digital-electronics-1
@@ -12,12 +12,12 @@ Michal Marek 195387
 * https://github.com/MichalMarek2010/digital-electronics-1
 
 
-### Obsah projektu
+### Content of the project
 
-* [Cíle projektu](#objectives)
-* [Popis hardwaru](#hardware)
-* [Popis a simulace modulů VHDL](#modules)
-* [Popis modulu TOP a jeho simulace](#top)
+* [Project goals](#objectives)
+* [Hardware description](#hardware)
+* [Description of the priject and of the simulation modules of VHDL](#modules)
+* [Description of TOP modules and its simulati](#top)
 * [Video](#video)
 * [Reference](#references)
 
