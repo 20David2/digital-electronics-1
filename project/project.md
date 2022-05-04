@@ -57,6 +57,9 @@ Odesílaní znaků na 7-seg displej
 Přiřazení textu do jednotlivých switchu
 * https://github.com/20David2/digital-electronics-1/blob/main/project/docs/switch_to_message.md
 
+Propojení znaků z klavesnice k znakům v programu
+* https://github.com/20David2/digital-electronics-1/blob/main/project/docs/char_to_code.md
+
 <a name="top"></a>
 
 ## TOP module description and simulations
