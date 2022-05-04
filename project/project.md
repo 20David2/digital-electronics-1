@@ -54,6 +54,9 @@ Zprovoznění hodinového signálu
 Odesílaní znaků na 7-seg displej
 * https://github.com/20David2/digital-electronics-1/blob/main/project/docs/driver_7seg_8characters.md
 
+Přiřazení textu do jednotlivých switchu
+* https://github.com/20David2/digital-electronics-1/blob/main/project/docs/switch_to_message.md
+
 <a name="top"></a>
 
 ## TOP module description and simulations
