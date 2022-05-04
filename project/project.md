@@ -1,4 +1,4 @@
-# Bežící text na 7-seg displeji
+# Running text on 7-seg displays
 
 ### Team members
 
@@ -23,19 +23,19 @@ Michal Marek 195387
 
 <a name="objectives"></a>
 
-## Cíle projektu
+## Project objectives
 
 Write your text here.
 
 <a name="hardware"></a>
 
-## Popis hardwaru
+## Hardware description
 
 Write your text here.
 
 <a name="modules"></a>
 
-## Popis a simulace modulů VHDL
+## VHDL modules description and simulations
 
 Zobrazení znaků na 7-seg displej
 * https://github.com/20David2/digital-electronics-1/blob/main/project/docs/alphabet_7seg.md
@@ -51,7 +51,7 @@ Odesílaní znaků na 7-seg displej
 
 <a name="top"></a>
 
-## Popis modulu TOP a jeho simulace
+## TOP module description and simulations
 
 Write your text here.
 
@@ -63,6 +63,6 @@ Write your text here
 
 <a name="references"></a>
 
-## Reference
+## References
 
 1. Write your text here.
