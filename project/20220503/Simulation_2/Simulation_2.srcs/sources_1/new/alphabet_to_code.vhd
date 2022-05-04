@@ -15,7 +15,7 @@ use work.bus_multiplexer_pkg.all;
     --------------------------------------------------------
     -- Instance (copy) of char_to_code entity
 
-entity alphabet_2_code is
+entity alphabet_to_code is
     generic(
         base_text_length_i : in integer := 64
     );
@@ -24,13 +24,15 @@ entity alphabet_2_code is
         text_length_i : integer;
         full_code_o : out array_vector
     );
-end alphabet_2_code;
+end alphabet_to_code;
 
-architecture Behavioral of alphabet_2_code is
+architecture Behavioral of alphabet_to_code is
 
 signal char : character;
 signal code_char : std_logic_vector(5 downto 0);
 signal code : array_vector;
+constant input : integer := 1;
+constant output : integer := 10;
 
 begin   
     --------------------------------------------------------
@@ -40,16 +42,16 @@ begin
         char_i => char,
         code_o => code_char
     );
-    
-    
-    p_mux : process(text_i)
-    
+    p_code : process(text_i)
     begin
-    
-        for I in 1 to text_length_i+1 loop
-            char <= 'A';
-            code(1) <= code_char;
-        end loop;
+        char <= 'A';
+        code(1) <= code_char;
+        char <= 'B';
+        code(2) <= code_char;
+        char <= 'C';
+        code(3) <= code_char;
+        char <= 'D';
+        code(4) <= code_char;
 
 --        char <= text_i(1);
 --        char <= '1';
@@ -63,7 +65,7 @@ begin
         
         full_code_o <= code;
 
-end process p_mux;
+end process p_code;
 
 
 end Behavioral;

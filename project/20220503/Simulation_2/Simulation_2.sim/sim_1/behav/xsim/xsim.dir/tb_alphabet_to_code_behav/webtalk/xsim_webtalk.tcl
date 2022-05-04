@@ -1,6 +1,6 @@
 webtalk_init -webtalk_dir C:/Users/david/OneDrive/Dokumenty/GitHub/digital-electronics-1/project/20220503/Simulation_2/Simulation_2.sim/sim_1/behav/xsim/xsim.dir/tb_alphabet_to_code_behav/webtalk/
 webtalk_register_client -client project
-webtalk_add_data -client project -key date_generated -value "Wed May  4 11:25:58 2022" -context "software_version_and_target_device"
+webtalk_add_data -client project -key date_generated -value "Wed May  4 12:47:28 2022" -context "software_version_and_target_device"
 webtalk_add_data -client project -key product_version -value "XSIM v2020.2 (64-bit)" -context "software_version_and_target_device"
 webtalk_add_data -client project -key build_version -value "3064766" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_platform -value "WIN64" -context "software_version_and_target_device"
@@ -14,7 +14,7 @@ webtalk_add_data -client project -key target_package -value "not_applicable" -co
 webtalk_add_data -client project -key target_speed -value "not_applicable" -context "software_version_and_target_device"
 webtalk_add_data -client project -key random_id -value "9c6c3ff3-c72f-4c0d-99a2-267555334433" -context "software_version_and_target_device"
 webtalk_add_data -client project -key project_id -value "ffab5722b6a14ba09b4539e836742129" -context "software_version_and_target_device"
-webtalk_add_data -client project -key project_iteration -value "7" -context "software_version_and_target_device"
+webtalk_add_data -client project -key project_iteration -value "9" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_name -value "Windows Server 2016 or Windows 10" -context "user_environment"
 webtalk_add_data -client project -key os_release -value "major release  (build 9200)" -context "user_environment"
 webtalk_add_data -client project -key cpu_name -value "Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz" -context "user_environment"
@@ -25,7 +25,7 @@ webtalk_register_client -client xsim
 webtalk_add_data -client xsim -key Command -value "xsim" -context "xsim\\command_line_options"
 webtalk_add_data -client xsim -key runtime -value "0 ps" -context "xsim\\usage"
 webtalk_add_data -client xsim -key iteration -value "0" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Simulation_Time -value "0.00_sec" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Simulation_Memory -value "6404_KB" -context "xsim\\usage"
-webtalk_transmit -clientid 4063537583 -regid "" -xml C:/Users/david/OneDrive/Dokumenty/GitHub/digital-electronics-1/project/20220503/Simulation_2/Simulation_2.sim/sim_1/behav/xsim/xsim.dir/tb_alphabet_to_code_behav/webtalk/usage_statistics_ext_xsim.xml -html C:/Users/david/OneDrive/Dokumenty/GitHub/digital-electronics-1/project/20220503/Simulation_2/Simulation_2.sim/sim_1/behav/xsim/xsim.dir/tb_alphabet_to_code_behav/webtalk/usage_statistics_ext_xsim.html -wdm C:/Users/david/OneDrive/Dokumenty/GitHub/digital-electronics-1/project/20220503/Simulation_2/Simulation_2.sim/sim_1/behav/xsim/xsim.dir/tb_alphabet_to_code_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
+webtalk_add_data -client xsim -key Simulation_Time -value "0.06_sec" -context "xsim\\usage"
+webtalk_add_data -client xsim -key Simulation_Memory -value "6400_KB" -context "xsim\\usage"
+webtalk_transmit -clientid 379805746 -regid "" -xml C:/Users/david/OneDrive/Dokumenty/GitHub/digital-electronics-1/project/20220503/Simulation_2/Simulation_2.sim/sim_1/behav/xsim/xsim.dir/tb_alphabet_to_code_behav/webtalk/usage_statistics_ext_xsim.xml -html C:/Users/david/OneDrive/Dokumenty/GitHub/digital-electronics-1/project/20220503/Simulation_2/Simulation_2.sim/sim_1/behav/xsim/xsim.dir/tb_alphabet_to_code_behav/webtalk/usage_statistics_ext_xsim.html -wdm C:/Users/david/OneDrive/Dokumenty/GitHub/digital-electronics-1/project/20220503/Simulation_2/Simulation_2.sim/sim_1/behav/xsim/xsim.dir/tb_alphabet_to_code_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
 webtalk_terminate
