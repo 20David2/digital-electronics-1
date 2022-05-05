@@ -1,7 +1,0 @@
-# compile vhdl design source files
-vhdl xil_defaultlib  \
-"../../../../Simulation.srcs/sources_1/imports/sources_1/imports/new/switch_to_message.vhd" \
-"../../../../Simulation.srcs/sim_1/new/tb_switch_to_message.vhd" \
-
-# Do not sort compile order
-nosort

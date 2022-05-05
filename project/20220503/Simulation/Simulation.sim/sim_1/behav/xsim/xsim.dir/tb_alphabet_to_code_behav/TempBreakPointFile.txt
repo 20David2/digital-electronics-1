@@ -1,4 +1,0 @@
-Breakpoint File Version 1.0
-126,true,"C:/Users/david/OneDrive/Dokumenty/GitHub/digital-electronics-1/project/20220503/Simulation/Simulation.srcs/sim_1/new/tb_alphabet_to_code.vhd"
-116,true,"C:/Users/david/OneDrive/Dokumenty/GitHub/digital-electronics-1/project/20220503/Simulation/Simulation.srcs/sim_1/new/tb_alphabet_to_code.vhd"
-154,true,"C:/Users/david/OneDrive/Dokumenty/GitHub/digital-electronics-1/project/20220503/Simulation/Simulation.srcs/sources_1/imports/sources_1/imports/new/alphabet_to_code.vhd"

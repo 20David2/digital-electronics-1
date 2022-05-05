@@ -32,7 +32,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity switch_to_message is
         generic(
-            default_length : in integer := 63 
+            default_length : in integer := 32 
         );
         Port(
             sw_state_i : in std_logic_vector; 
@@ -43,12 +43,11 @@ end switch_to_message;
 
 architecture Behavioral of switch_to_message  is
 
-subtype t_INST_TYPE is std_logic_vector(15 downto 0);
 begin
 
     p_switch_to_message : process(sw_state_i )
         
-        constant NullString : String:= "                                                               "; 
+        constant NullString : String:= "                                "; 
     
         constant Message1  : String := "Zprava 1 ";
         constant Message2  : String := "Tajna zprava 2 ";
@@ -152,7 +151,8 @@ begin
                 text_length <= Message16'length;
                 
             when others =>
-                text_o(18 downto 1) <= "Invalid selection ";
+                --text_o(18 downto 1) <= "Invalid selection ";
+                text_o(32 downto 1) <= "Bhoj Ahoj Ahoj Ahoj Ahoj Ahoj Ah";
                 text_length <= 18;                                                     
                            
         end case;    
